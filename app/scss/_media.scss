@@ -1,4 +1,4 @@
-// // @media (max-width: px) {	
+// // @media (max-width: px) {
 // // }
 // /* Условные ПК, ноуты и телевизоры */
 // /* 1050 из макета (контейнер + отступы) */
@@ -10,8 +10,6 @@
 // /* Условные мобилки */
 // @media (max-width: 767.98px) {
 // }
-
-
 
 // /* №1 */
 // @media (max-width: 1050px) {
@@ -37,3 +35,102 @@
 // 		/* max-width: none; */
 // 	}
 // }
+
+@media (max-width: 767.98px) {
+	body {
+		&.lock {
+			overflow: hidden;
+		}
+	}
+	.menu {
+		position: fixed;
+		top: -100%;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		background-color: rgba(255, 255, 255, 0.9);
+		padding: 70px 10px 20px 10px;
+
+		transition: all 0.5s ease 0s;
+		opacity: 0;
+
+		&__item {
+			&:not(:last-child) {
+				margin: 0px 0px 20px 0px;
+			}
+		}
+		&__list {
+			display: block;
+			text-align: center;
+		}
+		&__link {
+			padding: 10px 0;
+			font-size: 24px;
+			&.parent {
+				margin: 0;
+			}
+		}
+		&__arrow {
+			top: 20px;
+		}
+	}
+
+	.header__menu {
+		&_active {
+			top: 0;
+			opacity: 1;
+		}
+	}
+	.header__burger_active {
+		&::before {
+			transform: rotate(45deg);
+			top: 9px;
+		}
+		&::after {
+			transform: rotate(-45deg);
+			bottom: 9px;
+		}
+		span {
+			transform: scale(0);
+		}
+	}
+	.header__bottom_fixed {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		border-radius: 0px;
+
+		&::before {
+			content: "";
+			background-color: #fff;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+		.header__search {
+			position: relative;
+			z-index: 3;
+			color: #fff;
+		}
+		.header__cart {
+			position: relative;
+			z-index: 3;
+			color: #fff;
+		}
+	}
+	.sub-menu__list {
+		position: relative;
+		top: 0;
+		left: 0;
+	}
+}
+
+@media (min-width: 767.98px) {
+	.header__burger {
+		display: none;
+	}
+}
