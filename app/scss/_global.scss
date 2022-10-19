@@ -53,6 +53,47 @@ body {
 	border-radius: 8px;
 	padding: 8px 35px;
 }
+.titles {
+	// .titles__suptitle
+	&__suptitle {
+		font-weight: 700;
+		font-size: 12px;
+		line-height: 2;
+		letter-spacing: 2.5px;
+		text-transform: uppercase;
+		color: $color-violet;
+		padding-left: 33px;
+		position: relative;
+		&::before {
+			content: "";
+			position: absolute;
+			top: -2px;
+			left: 0;
+			width: 28px;
+			height: 27px;
+			background-image: url("../images/icons/decor-white.svg");
+		}
+		&:not(:last-child) {
+			margin-bottom: 33px;
+		}
+		// .titles__suptitle_white
+		&_white {
+			color: #f5f5f5;
+		}
+	}
+	// .titles__title
+	&__title {
+		max-width: 585px;
+		font-weight: 900;
+		font-size: 36px;
+		line-height: 1.17;
+		color: #000;
+		// .titles__title_white
+		&_white {
+			color: #fff;
+		}
+	}
+}
 
 // .breadcrumbs {
 // 	&__inner {

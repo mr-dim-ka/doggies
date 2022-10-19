@@ -152,6 +152,11 @@
 	.main-page {
 		padding-top: 370px;
 	}
+	.who__container {
+		&::before {
+			display: none;
+		}
+	}
 }
 
 @media (min-width: 767.98px) {

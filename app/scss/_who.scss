@@ -1,0 +1,50 @@
+.who {
+	margin-top: -80px;
+	padding-bottom: 140px;
+	// .who__container
+	&__container {
+		background-color: $color-violet;
+		background: $color-violet url("../images/who/blob.png") 8% 105% no-repeat;
+		border-radius: 40px;
+		@include adaptiv-value("padding-top", 100, 30, 1);
+		@include adaptiv-value("padding-left", 88, 20, 1);
+		@include adaptiv-value("padding-right", 88, 20, 1);
+		border: 1px solid transparent;
+		position: relative;
+		&::before {
+			content: "";
+			position: absolute;
+			right: 0;
+			top: -15%;
+			width: 201px;
+			height: 317px;
+			background-image: url("../images/who/dots-decor.png");
+			transform: translate(40%, 0%);
+		}
+	}
+	// .who__head
+	&__head {
+		@include adaptiv-value("margin-bottom", 68, 40, 1);
+	}
+	// .who__text
+	&__text {
+		font-size: 16px;
+		line-height: 1.5;
+		letter-spacing: 0.15px;
+		color: #f5f5f5;
+		&:not(:last-child) {
+			@include adaptiv-value("margin-bottom", 55, 30, 1);
+		}
+	}
+	// .who__picture
+	&__picture {
+		border-radius: 40px;
+		box-shadow: 0px 8px 16px rgba(38, 38, 38, 0.24), 0px 16px 24px rgba(38, 38, 38, 0.2);
+		margin-bottom: -120px;
+		padding: 0px 0px 49.645% 0px;
+		@include ibg();
+		img {
+			border-radius: 40px;
+		}
+	}
+}
