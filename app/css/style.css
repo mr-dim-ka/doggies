@@ -299,7 +299,6 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  background-color: #1a1a1a;
 }
 
 .footer {
@@ -351,9 +350,9 @@ body.touch .sub-menu__list.open {
 }
 
 .header {
-  position: fixed;
-  top: 0px;
-  left: 0px;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   z-index: 50;
 }
@@ -371,9 +370,9 @@ body.touch .sub-menu__list.open {
       -ms-flex-align: center;
           align-items: center;
   row-gap: 30px;
-  -webkit-column-gap: 20px;
-     -moz-column-gap: 20px;
-          column-gap: 20px;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
   color: #fff;
   padding: 25px 0;
 }
@@ -501,6 +500,12 @@ body.touch .sub-menu__list.open {
   -webkit-column-gap: 10px;
      -moz-column-gap: 10px;
           column-gap: 10px;
+}
+
+.item-header__icon {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 24px;
+          flex: 0 0 24px;
 }
 
 .item-header__title,
@@ -634,9 +639,60 @@ body.touch .sub-menu__list.open {
   top: 5px;
 }
 
+.main-page {
+  background: url("../images/main-page/main-page-bg.jpg") center/cover no-repeat;
+  padding-top: 190px;
+  min-height: 800px;
+}
+
+.main-page__container {
+  padding-top: 120px;
+  padding-top: 120px;
+}
+
+.main-page__body {
+  max-width: 600px;
+}
+
+.main-page__title {
+  font-weight: 900;
+  font-size: 56px;
+  font-size: 56px;
+  line-height: 1;
+  color: #fff;
+}
+
+.main-page__title:not(:last-child) {
+  margin-bottom: 48px;
+}
+
 @media (min-width: 767.98px) {
   .header__burger {
     display: none;
+  }
+}
+
+@media (max-width: 1050px) {
+  .main-page__container {
+    padding-top: calc(30px + 90 * ((100vw - 320px) / 730));
+  }
+
+  .main-page__title {
+    font-size: calc(35px + 21 * ((100vw - 320px) / 730));
+  }
+}
+
+@media (max-width: 991.98px) {
+  .header__top {
+    display: block;
+  }
+
+  .header__logo:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .main-page {
+    padding-top: 270px;
   }
 }
 
@@ -649,6 +705,14 @@ body.touch .sub-menu__list.open {
 @media (max-width: 767.98px) {
   body.lock {
     overflow: hidden;
+  }
+
+  .header__items {
+    display: block;
+  }
+
+  .header__items > div:not(:last-child) {
+    margin-bottom: 20px;
   }
 
   .menu {
@@ -746,5 +810,9 @@ body.touch .sub-menu__list.open {
     position: relative;
     top: 0;
     left: 0;
+  }
+
+  .main-page {
+    padding-top: 370px;
   }
 }
