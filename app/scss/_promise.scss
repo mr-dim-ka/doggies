@@ -1,0 +1,50 @@
+.promise {
+	@include adaptiv-value("padding-top", 86, 40, 1);
+	@include adaptiv-value("padding-bottom", 122, 40, 1);
+	// .promise__container
+	&__container {
+	}
+	// .promise__head
+	&__head {
+		@include adaptiv-value("margin-bottom", 68, 40, 1);
+	}
+	// .promise__items
+	&__items {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -12px;
+		row-gap: 24px;
+	}
+	// .promise__item
+	&__item {
+		padding: 0 12px;
+		flex: 1 1 33.333%;
+	}
+}
+.item-promise {
+	height: 100%;
+	display: flex;
+	column-gap: 24px;
+	min-width: 230px;
+	// .item-promise__icon
+	&__icon {
+		align-self: flex-start;
+		flex: 0 0 63px;
+	}
+	// .item-promise__body
+	&__body {
+	}
+	// .item-promise__title
+	&__title {
+		font-weight: 900;
+		font-size: 19px;
+		line-height: 1.37;
+		color: $color-red;
+		&:not(:last-child) {
+			margin-bottom: 20px;
+		}
+	}
+	// .item-promise__text
+	&__text {
+	}
+}
