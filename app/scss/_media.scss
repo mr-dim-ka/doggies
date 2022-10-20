@@ -157,6 +157,17 @@
 			display: none;
 		}
 	}
+	.dog {
+		background: $color-green;
+	}
+	.dog__inner {
+		display: block;
+	}
+	.dog__body {
+		&:not(:first-child) {
+			margin-top: 25px;
+		}
+	}
 }
 
 @media (min-width: 767.98px) {

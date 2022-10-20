@@ -1,0 +1,75 @@
+.dog {
+	background: $color-green url("../images/dog/dots-decor.png") left center no-repeat;
+	position: relative;
+	&::before {
+		content: "";
+		position: absolute;
+		width: 37.2%;
+		height: 248px;
+		background: url("../images/dog/blob.png") 0 0 / contain no-repeat;
+		&::after {
+			content: "";
+		}
+	}
+	// .dog__container
+	&__container {
+	}
+	// .dog__inner
+	&__inner {
+		padding-top: 44px;
+		display: flex;
+		align-items: flex-end;
+		column-gap: 10px;
+		position: relative;
+		&::before {
+			content: "";
+			position: absolute;
+			z-index: 0;
+			width: 595px;
+			height: 387px;
+			top: 0;
+			right: -16%;
+			background: url("../images/dog/line.png") right center no-repeat;
+		}
+		&::after {
+			content: "";
+			position: absolute;
+			z-index: 0;
+			width: 100px;
+			height: 100px;
+			top: 24%;
+			right: -20%;
+			background: url("../images/dog/tennis-ball.png") center no-repeat;
+		}
+	}
+	// .dog__picture
+	&__picture {
+		flex: 0 1 744px;
+		transform: translate(-30%, 0%);
+		// padding: 0px 0px 37% 0px;
+		// @include ibg();
+	}
+	// .dog__body
+	&__body {
+		align-self: center;
+		flex: 0 1 411px;
+		position: relative;
+		// padding-left: 99px;
+		// margin-left: 99px;
+	}
+	// .dog__title
+	&__title {
+		// max-width: 410px;
+		font-weight: 900;
+		font-size: 36px;
+		line-height: 1.17;
+		color: #fff;
+		&:not(:last-child) {
+			margin-bottom: 45px;
+		}
+	}
+	// .dog__button
+	&__button {
+		align-self: flex-start;
+	}
+}

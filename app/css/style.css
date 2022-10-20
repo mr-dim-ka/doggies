@@ -834,6 +834,94 @@ body.touch .sub-menu__list.open {
   margin-bottom: 20px;
 }
 
+.dog {
+  background: #29c3be url("../images/dog/dots-decor.png") left center no-repeat;
+  position: relative;
+}
+
+.dog::before {
+  content: "";
+  position: absolute;
+  width: 37.2%;
+  height: 248px;
+  background: url("../images/dog/blob.png") 0 0/contain no-repeat;
+}
+
+.dog::before::after {
+  content: "";
+}
+
+.dog__inner {
+  padding-top: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+  position: relative;
+}
+
+.dog__inner::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  width: 595px;
+  height: 387px;
+  top: 0;
+  right: -16%;
+  background: url("../images/dog/line.png") right center no-repeat;
+}
+
+.dog__inner::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  width: 100px;
+  height: 100px;
+  top: 24%;
+  right: -20%;
+  background: url("../images/dog/tennis-ball.png") center no-repeat;
+}
+
+.dog__picture {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 744px;
+          flex: 0 1 744px;
+  -webkit-transform: translate(-30%, 0%);
+      -ms-transform: translate(-30%, 0%);
+          transform: translate(-30%, 0%);
+}
+
+.dog__body {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 411px;
+          flex: 0 1 411px;
+  position: relative;
+}
+
+.dog__title {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 1.17;
+  color: #fff;
+}
+
+.dog__title:not(:last-child) {
+  margin-bottom: 45px;
+}
+
+.dog__button {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
 @media (min-width: 767.98px) {
   .header__burger {
     display: none;
@@ -1018,5 +1106,17 @@ body.touch .sub-menu__list.open {
 
   .who__container::before {
     display: none;
+  }
+
+  .dog {
+    background: #29c3be;
+  }
+
+  .dog__inner {
+    display: block;
+  }
+
+  .dog__body:not(:first-child) {
+    margin-top: 25px;
   }
 }
