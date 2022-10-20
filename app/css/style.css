@@ -922,6 +922,95 @@ body.touch .sub-menu__list.open {
       align-self: flex-start;
 }
 
+.services {
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+
+.services__head {
+  margin-bottom: 68px;
+}
+
+.services__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -12px;
+  row-gap: 24px;
+}
+
+.services__item {
+  padding: 0 12px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 33.333%;
+          flex: 1 1 33.333%;
+  min-width: 250px;
+}
+
+.services__button {
+  margin-top: 66px;
+  text-align: center;
+}
+
+.item-services {
+  padding: 45px;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.item-services:hover {
+  -webkit-box-shadow: 0px 8px 16px rgba(38, 38, 38, 0.24), 0px 16px 24px rgba(38, 38, 38, 0.2);
+          box-shadow: 0px 8px 16px rgba(38, 38, 38, 0.24), 0px 16px 24px rgba(38, 38, 38, 0.2);
+}
+
+.item-services__img {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 63px;
+          flex: 0 0 63px;
+  width: 63px;
+  max-height: 63px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.item-services__img:not(:last-child) {
+  margin-bottom: 33px;
+}
+
+.item-services__title {
+  font-weight: 900;
+  font-size: 19px;
+  line-height: 1.37;
+  color: #f2726f;
+}
+
+.item-services__title:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 @media (min-width: 767.98px) {
   .header__burger {
     display: none;
@@ -967,6 +1056,22 @@ body.touch .sub-menu__list.open {
 
   .promise__head {
     margin-bottom: calc(40px + 28 * ((100vw - 320px) / 730));
+  }
+
+  .services {
+    padding-top: calc(40px + 70 * ((100vw - 320px) / 730));
+  }
+
+  .services {
+    padding-bottom: calc(40px + 70 * ((100vw - 320px) / 730));
+  }
+
+  .services__head {
+    margin-bottom: calc(40px + 28 * ((100vw - 320px) / 730));
+  }
+
+  .item-services {
+    padding: calc(15px + 30 * ((100vw - 320px) / 730));
   }
 }
 
