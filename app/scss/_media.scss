@@ -185,6 +185,17 @@
 			margin-bottom: 30px;
 		}
 	}
+	.customers {
+		background: none;
+	}
+	.customers__inner {
+		display: block;
+	}
+	.customers__head {
+		&:not(:last-child) {
+			margin-bottom: 40px;
+		}
+	}
 }
 @media (max-width: 479.98px) {
 	.form-appointment__items {
@@ -197,6 +208,9 @@
 				margin-bottom: 30px;
 			}
 		}
+	}
+	.customers__item {
+		flex: 1 1 auto;
 	}
 }
 
