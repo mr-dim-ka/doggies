@@ -168,6 +168,22 @@
 			margin-top: 25px;
 		}
 	}
+	.services {
+		background: none;
+	}
+	.appointment__inner {
+		display: block;
+	}
+	.appointment__item {
+		&:not(:last-child) {
+			margin-bottom: 40px;
+		}
+	}
+}
+@media (max-width: 479.98px) {
+	.form-appointment__items {
+		flex-direction: column;
+	}
 }
 
 @media (min-width: 767.98px) {

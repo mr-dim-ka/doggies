@@ -1,6 +1,7 @@
 .dog {
 	background: $color-green url("../images/dog/dots-decor.png") left center no-repeat;
 	position: relative;
+	overflow: hidden;
 	&::before {
 		content: "";
 		position: absolute;

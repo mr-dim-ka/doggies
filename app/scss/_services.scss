@@ -1,4 +1,6 @@
 .services {
+	background: url("../images/services/blob.png") 100% 225% no-repeat;
+	overflow: hidden;
 	@include adaptiv-value("padding-top", 110, 40, 1);
 	@include adaptiv-value("padding-bottom", 110, 40, 1);
 	// .services__container
