@@ -5,6 +5,15 @@ $(function () {
 		$('.header__bottom').toggleClass('header__bottom_fixed');
 		$('body').toggleClass('lock');
 	});
+
+	$('.gallery__tabs .tab').on('click', function (event) {
+		var id = $(this).attr('data-id');
+		$('.gallery__tabs').find('.tab__item').removeClass('tab__item_active').hide();
+		$('.gallery__tabs .tabs').find('.tab').removeClass('tab_active');
+		$(this).addClass('tab_active');
+		$('#' + id).addClass('tab__item_active').fadeIn();
+		return false;
+	});
 });
 
 

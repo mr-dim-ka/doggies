@@ -179,10 +179,24 @@
 			margin-bottom: 40px;
 		}
 	}
+	.gallery {
+		.tab {
+			flex: 0 1 50%;
+			margin-bottom: 30px;
+		}
+	}
 }
 @media (max-width: 479.98px) {
 	.form-appointment__items {
 		flex-direction: column;
+	}
+	.gallery {
+		.tab {
+			flex: 0 1 100%;
+			&:not(:last-child) {
+				margin-bottom: 30px;
+			}
+		}
 	}
 }
 
