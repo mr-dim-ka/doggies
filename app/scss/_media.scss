@@ -208,6 +208,11 @@
 	.impact__picture {
 		margin-top: 0;
 	}
+	.footer__inner {
+		& > div {
+			flex: 1 1 50%;
+		}
+	}
 }
 @media (max-width: 479.98px) {
 	.form-appointment__items {
@@ -226,6 +231,17 @@
 	}
 	.impact__item {
 		flex: 1 1 100%;
+	}
+	.footer__inner {
+		& > div {
+			flex: 1 1 100%;
+		}
+	}
+	.menu-footer {
+		padding-left: 12px;
+	}
+	.company__body {
+		flex-direction: column;
 	}
 }
 
