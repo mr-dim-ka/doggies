@@ -54,6 +54,10 @@ body {
 	padding: 8px 35px;
 	@include adaptiv-value("padding-right", 35, 15, 1);
 	@include adaptiv-value("padding-left", 35, 15, 1);
+	transition: all 0.3s ease 0s;
+	&:hover {
+		background-color: darken($color-red, 10%);
+	}
 }
 .titles {
 	// .titles__suptitle
