@@ -48,10 +48,12 @@ body {
 	line-height: 2;
 	text-transform: uppercase;
 	text-align: center;
-	color: #ffffff;
+	color: #fff;
 	background-color: $color-red;
 	border-radius: 8px;
 	padding: 8px 35px;
+	@include adaptiv-value("padding-right", 35, 15, 1);
+	@include adaptiv-value("padding-left", 35, 15, 1);
 }
 .titles {
 	// .titles__suptitle
